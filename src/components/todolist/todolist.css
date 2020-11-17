@@ -1,0 +1,9 @@
+.item-name:hover {
+    background: hsla(0, 0%, 100%, 0.100);
+    border-radius: 5px;
+}
+
+.select-item{
+    background: hsla(0, 0%, 100%, 0.100);
+    border-radius: 5px;
+}

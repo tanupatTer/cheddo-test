@@ -1,0 +1,27 @@
+.input-text{
+    color: #fff;
+    border-radius: .6rem;
+    border: 1px solid #8a85ff;
+    background-color: #fff0;
+}
+
+.input-text:focus{
+    color: #fff;
+    border-radius: .6rem;
+    background-color: #282c34;
+    border-color: #8a85ff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #8985ff3f;
+}
+
+.btn-text-color{
+    color: white;
+}
+.btn-text-color:hover{
+    color: white;
+}
+
+.btn-delete:hover{
+    color: white;
+    background-color: #dc3545;
+}
