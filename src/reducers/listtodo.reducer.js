@@ -38,10 +38,6 @@ export default (state = initialState, { type, payload }) => {
     switch (type) {
 
         case 'ADD_LISTTODO':
-            // stateC = [...state];
-            console.log(payload);
-            // stateC = payload.data
-            // stateC.push(payload);
             return [...state, ...payload]
 
         case 'ADD_TODO':
@@ -55,9 +51,7 @@ export default (state = initialState, { type, payload }) => {
             })
 
         case 'DELETE_TODO':
-            // console.log('DELETETODO', action);
             return state.filter((todo) => todo.id !== payload.id)
-        // return state
 
         default:
             return state
