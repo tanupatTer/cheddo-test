@@ -16,7 +16,7 @@ export default function Home() {
                     </div>
                     <div className="col-4">
                         <h1 className="text-center text-nowrap" style={{ fontSize: 'calc(1.5rem + 0.9vw)' }}>Front-end Developer Testting</h1>
-                        <h3 className="text-center text-nowrap offset-3">Cheddo Technogy Co.Ltd</h3>
+                        <h3 className="text-center text-nowrap offset-3" style={{ fontSize: 'calc(1rem + 0.9vw)' }}>Cheddo Technogy Co.Ltd</h3>
                     </div>
                 </div>
                 <div className="row d-flex align-items-center">
