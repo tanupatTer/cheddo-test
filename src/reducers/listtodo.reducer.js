@@ -3,7 +3,7 @@ const listtodo = (state = initialState, { type, payload }) => {
     switch (type) {
 
         case 'ADD_LISTTODO':
-            return [...state, ...payload]
+            return [...payload]
 
         case 'ADD_TODO':
             return [...state].concat([payload])

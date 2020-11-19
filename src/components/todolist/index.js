@@ -1,25 +1,18 @@
 import './todolist.css'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-// import * as listTodoAction from '../../actions/listtodo.action'
-// import * as tasknameAction from '../../actions/taskname.action'
-// import * as modeAction from '../../actions/modeselector.action'
 
-import { fetchListTodo, changeMode, setTuskName } from '../../actions/index'
+// import { changeMode, setTuskName } from '../../actions/index'
+import * as action from '../../actions/index'
 
 export default function Todolist() {
     const dispatch = useDispatch()
     const listtodo = useSelector(state => state.listtodo)
     const modeselector = useSelector(state => state.modeselector)
 
-    // Get Data Todo List
-    useEffect(() => {
-        dispatch(fetchListTodo())
-    }, [])
-
     let divlisttodo = listtodo.map((todo, i) =>
-        (<div className={`${todo.id === modeselector.id && 'select-item'} bd-highlight item-name pl-2`} key={i} onClick={() => { dispatch(setTuskName(todo.name)); dispatch(changeMode(true, todo.id, todo.name)); }} >{todo.name}</div>)
+        (<div className={`${todo.id === modeselector.id && 'select-item'} bd-highlight item-name pl-2`} key={i} onClick={() => { dispatch(action.setTuskName(todo.name)); dispatch(action.changeMode(true, todo.id, todo.name)); }} >{todo.name}</div>)
     )
 
     return (

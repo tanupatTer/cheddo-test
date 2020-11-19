@@ -11,8 +11,10 @@ import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 
 import rootReducer from './reducers'
+import { fetchListTodo } from './actions/index'
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
+store.dispatch(fetchListTodo())
 
 ReactDOM.render(
   <React.StrictMode>
