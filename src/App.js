@@ -2,7 +2,7 @@ import './App.css';
 
 import ViewRouting from './routing'
 
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
 
 function App() {
 

@@ -4,7 +4,7 @@ const initialState = {
     name: ''
 }
 
-export default (state = initialState, { type, payload }) => {
+const mode = (state = initialState, { type, payload }) => {
     switch (type) {
 
         case 'CHANGE_MODESELECTER':
@@ -14,3 +14,4 @@ export default (state = initialState, { type, payload }) => {
             return state
     }
 }
+export default mode;

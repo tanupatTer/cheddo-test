@@ -2,7 +2,7 @@ const initialState = {
     name: ''
 }
 
-export default (state = initialState, { type, payload }) => {
+const tuskname = (state = initialState, { type, payload }) => {
     switch (type) {
 
         case 'SET_TASKNAME':
@@ -12,3 +12,4 @@ export default (state = initialState, { type, payload }) => {
             return state
     }
 }
+export default tuskname;

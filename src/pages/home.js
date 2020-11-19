@@ -12,7 +12,7 @@ export default function Home() {
             <div className="container">
                 <div className="row align-items-center p-3">
                     <div className="col-4">
-                        <img src={logo} className="mx-auto d-block" style={{ maxWidth: '75%' }} />
+                        <img src={logo} className="mx-auto d-block" style={{ maxWidth: '75%' }} alt="Choddo Logo" />
                     </div>
                     <div className="col-4">
                         <h1 className="text-center text-nowrap" style={{ fontSize: 'calc(1.5rem + 0.9vw)' }}>Front-end Developer Testting</h1>
