@@ -11,8 +11,14 @@ export default function Todolist() {
     const listtodo = useSelector(state => state.listtodo)
     const modeselector = useSelector(state => state.modeselector)
 
+    const handleClickItem = (todo) => () => {
+        dispatch(action.setTuskName(todo.name));
+        dispatch(action.changeMode(true, todo.id, todo.name));
+        document.getElementById('tuskname').focus();
+    }
+
     let divlisttodo = listtodo.map((todo, i) =>
-        (<div className={`${todo.id === modeselector.id && 'select-item'} bd-highlight item-name pl-2`} key={i} onClick={() => { dispatch(action.setTuskName(todo.name)); dispatch(action.changeMode(true, todo.id, todo.name)); }} >{todo.name}</div>)
+        (<div className={`${todo.id === modeselector.id && 'select-item'} bd-highlight item-name pl-2`} key={i} onClick={handleClickItem(todo)} >{todo.name}</div>)
     )
 
     return (

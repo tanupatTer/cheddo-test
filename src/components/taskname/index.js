@@ -40,7 +40,7 @@ function Taskname() {
     return (
         <div className="align-self-center">
             <p className="text-center font-weight-bolder" style={{ fontSize: "1.8rem", color: 'white' }}>Task Name</p>
-            <input type="text" className="form-control input-text" value={taskname} onChange={handleChangeName} aria-describedby="...." />
+            <input id="tuskname" type="text" className="form-control input-text" value={taskname} onChange={handleChangeName} aria-describedby="...." />
             <p className="pl-2" style={{ color: '#d4b248', height: '1rem' }}>{taskname !== '' && 'Typing.....'}</p>
             <div className="row justify-content-center">
                 <button type="button" onClick={addandchange} style={{ width: '40%' }} className="btn btn-success m-2" disabled={taskname === ''}>Button</button>
